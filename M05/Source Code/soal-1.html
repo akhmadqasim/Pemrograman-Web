@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Seleksi If-Else</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let nilai = prompt("Nilai (0-100): ", 0);
+            let hasil = "";
+            let predikat = "";
+
+            if (nilai >= 80) {
+                hasil = "Lulus";
+                predikat = "A";
+            } else if (nilai >= 75) {
+                hasil = "Lulus";
+                predikat = "AB";
+            } else if (nilai >= 70) {
+                hasil = "Lulus";
+                predikat = "B";
+            } else if (nilai >= 65) {
+                hasil = "Lulus";
+                predikat = "BC";
+            } else if (nilai >= 60) {
+                hasil = "Lulus";
+                predikat = "C";
+            } else if (nilai >= 50) {
+                hasil = "Tidak Lulus";
+                predikat = "D";
+            } else {
+                hasil = "Tidak Lulus";
+                predikat = "E";
+            }
+
+            document.write("Nilai Anda : " + nilai);
+            document.write("<br/>");
+            document.write("Predikat : " + predikat);
+            document.write("<br/>");
+            document.write("Anda " + hasil);
+        </script>
+    </body>
+</html>
